@@ -1,0 +1,34 @@
+count=Hash.new
+amount=2090
+while(amount!=0)
+   if(amount>2000)
+    x=amount/2000
+    amount=amount-x*2000
+    count["2000"]=x
+   elsif(amount>500)
+    x=amount/500
+    amount=amount-x*500
+    count["500"]=x
+   elsif(amount>200)
+    x=amount/200
+    amount=amount-x*200
+    count["200"]=x
+   elsif(amount>100)
+    x=amount/100
+    amount=amount-x*100
+    count["100"]=x
+   elsif(amount>50)
+    x=amount/50
+    amount=amount-x*50
+    count["50"]=x
+   elsif(amount>20)
+    x=amount/20
+    amount=amount-x*20
+    count["20"]=x
+   else(amount>10)
+    x=amount/10
+    amount=amount-x*10
+    count["10"]=x
+   end 
+end
+p count
