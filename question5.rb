@@ -1,5 +1,5 @@
-a=[[1,2],[3,4]]
-b=[[1,2],[3,4]]
+
+def multiply(a,b)
 temp=[]
 total=[]
 a.each do|row| 
@@ -12,4 +12,10 @@ a.each do|row|
   end
  total<<temp
 end
-p temp
+ p temp
+end
+
+
+a=[[1,2],[3,4]]
+b=[[1,2],[3,4]]
+multiply(a,b)
